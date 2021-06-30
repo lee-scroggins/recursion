@@ -12,5 +12,10 @@ public class Palindromes {
            return checkRecursive(input.replaceAll("\\W|_", "").toLowerCase());
     }
 
+  public static boolean checkIterative(String input) {
+    return input.length() <= 1
+        ||  input.charAt(0) == input.charAt(input.length() -1)
+        && checkIterative(input.substring(1, input.length()-1));
+  }
 
 }

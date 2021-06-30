@@ -41,5 +41,19 @@ class PalindromesTest {
     Assertions.assertFalse(Palindromes.checkDenormalized("A man, a plan, a dam - Hoover!"));
   }
 
+  @Test
+  void checkIterative_true() {
+    Assertions.assertTrue(Palindromes.checkIterative("radar"));
+    Assertions.assertTrue(Palindromes.checkIterative("abba"));
+    Assertions.assertTrue(Palindromes.checkIterative("x"));
+    Assertions.assertTrue(Palindromes.checkIterative(""));
+  }
+
+  @Test
+  void checkIterative_false() {
+    Assertions.assertFalse(Palindromes.checkIterative("sonar"));
+    Assertions.assertFalse(Palindromes.checkIterative("abb"));
+  }
+
 
 }
