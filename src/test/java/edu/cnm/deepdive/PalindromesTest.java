@@ -5,6 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+/**
+ *
+ */
 class PalindromesTest {
 
   static final String[] palindromes = {
@@ -19,6 +22,9 @@ class PalindromesTest {
       "abb"
   };
 
+  /**
+   *
+   */
   @Test
   void checkRecursive_palindromes() {
     for (String input : palindromes) {
@@ -26,6 +32,9 @@ class PalindromesTest {
     }
   }
 
+  /**
+   *
+   */
   @Test
   void checkRecursive_nonPalindromes() {
     for (String input : nonPalindromes) {
@@ -33,6 +42,9 @@ class PalindromesTest {
     }
   }
 
+  /**
+   *
+   */
   @Test
       void checkDenormalized() {
     Assertions.assertTrue(Palindromes.checkDenormalized("Radar"));
@@ -41,6 +53,9 @@ class PalindromesTest {
     Assertions.assertFalse(Palindromes.checkDenormalized("A man, a plan, a dam - Hoover!"));
   }
 
+  /**
+   *
+   */
   @Test
   void checkIterative_true() {
     Assertions.assertTrue(Palindromes.checkIterative("radar"));
@@ -49,6 +64,9 @@ class PalindromesTest {
     Assertions.assertTrue(Palindromes.checkIterative(""));
   }
 
+  /**
+   *
+   */
   @Test
   void checkIterative_false() {
     Assertions.assertFalse(Palindromes.checkIterative("sonar"));
