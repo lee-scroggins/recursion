@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"edu.cnm.deepdive","l":"FactorialsBigInteger"},{"p":"edu.cnm.deepdive","l":"Palindromes"}]

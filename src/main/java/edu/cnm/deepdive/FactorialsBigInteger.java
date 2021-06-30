@@ -2,12 +2,15 @@ package edu.cnm.deepdive;
 
 import java.math.BigInteger;
 
+/**
+ * Computes the factorial function of value (n!) for the provided parameters.
+ * The {@return BigInteger} will return values greater than 20!
+ */
 public class FactorialsBigInteger {
 
   /**
-   * Computes the perfect
-   * @param input
-   * @return
+   * Computes the factorial of {@param input} using recursion.
+   * The return type is {@return BigInteger} and values aboe 20! will be correct.
    */
   public static BigInteger computeRecursive(int input) {
     if (input < 0) {
@@ -17,9 +20,8 @@ public class FactorialsBigInteger {
   }
 
   /**
-   * Computes the perfect
-   * @param input
-   * @return
+   * Computes the factorial of {@param input} using iteration.
+   * The return type is {@return BigInteger} and values abue 20! will be correct.
    */
   public static BigInteger computeIterative(int input) {
     if (input < 0) {

@@ -8,7 +8,7 @@ import org.junit.jupiter.api.function.Executable;
 
 
 /**
- *
+ * Test for BigIntegers.
  */
 class FactorialsBigIntegerTest {
 
@@ -21,7 +21,7 @@ class FactorialsBigIntegerTest {
   };
 
   /**
-   *
+   * Computes non exceptions of computeRecursive method with expected and actual input.
    */
   @Test
   void computeRecursive_nonExceptional() {
@@ -34,7 +34,7 @@ class FactorialsBigIntegerTest {
   }
 
   /**
-   *
+   * Computes exceptions for computeRecursive method with expected throw.
    */
   @Test
   void computeRecursive_exceptional() {
@@ -47,7 +47,7 @@ class FactorialsBigIntegerTest {
   }
 
   /**
-   *
+   * Computes non exceptions of computeIterative method with expected and actual input.
    */
   @Test
   void computeIterative_nonExceptional() {
@@ -60,7 +60,7 @@ class FactorialsBigIntegerTest {
   }
 
   /**
-   *
+   * Computes exceptions for computeIterative method with expected throw.
    */
   @Test
   void computeIterative_exceptional() {

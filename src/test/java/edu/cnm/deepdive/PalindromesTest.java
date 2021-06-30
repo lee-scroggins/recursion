@@ -6,7 +6,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 /**
- *
+ * Tests for recursion and iteration for @String input for the provided parameters.
+ * The {@return boolean} will return true or false.
  */
 class PalindromesTest {
 
@@ -23,7 +24,8 @@ class PalindromesTest {
   };
 
   /**
-   *
+   * Computes recursion for @String input for the provided parameters.
+   * Test assertions are true.
    */
   @Test
   void checkRecursive_palindromes() {
@@ -33,7 +35,8 @@ class PalindromesTest {
   }
 
   /**
-   *
+   * Computes recursion for @String input for the provided parameters.
+   * Test assertions are false.
    */
   @Test
   void checkRecursive_nonPalindromes() {
@@ -43,7 +46,8 @@ class PalindromesTest {
   }
 
   /**
-   *
+   *Tests recursion values of parameters.
+   * Test assertions are true or false.
    */
   @Test
       void checkDenormalized() {
@@ -54,7 +58,8 @@ class PalindromesTest {
   }
 
   /**
-   *
+   * Computes iteration for @String input for the provided parameters.
+   * Test assertions are true.
    */
   @Test
   void checkIterative_true() {
@@ -65,7 +70,8 @@ class PalindromesTest {
   }
 
   /**
-   *
+   * Computes iteration for @String input for the provided parameters.
+   * Test assertions are true.
    */
   @Test
   void checkIterative_false() {
