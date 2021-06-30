@@ -2,6 +2,7 @@ package edu.cnm.deepdive;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class PalindromesTest {
@@ -31,5 +32,14 @@ class PalindromesTest {
       assertFalse(Palindromes.checkRecursive(input));
     }
   }
+
+  @Test
+      void checkDenormalized() {
+    Assertions.assertTrue(Palindromes.checkDenormalized("Radar"));
+    Assertions.assertTrue(Palindromes.checkDenormalized("A man, a plan, a canal Panama!"));
+    Assertions.assertTrue(Palindromes.checkDenormalized("aBba"));
+    Assertions.assertFalse(Palindromes.checkDenormalized("A man, a plan, a dam - Hoover!"));
+  }
+
 
 }

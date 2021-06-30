@@ -2,10 +2,11 @@ package edu.cnm.deepdive;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.math.BigInteger;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
-class FactorialsTest {
+class FactorialsBigIntegerTest {
 
   static final long[][] testCases = {
       {0, 1},
@@ -19,8 +20,8 @@ class FactorialsTest {
   void computeRecursive_nonExceptional() {
     for (long[] testCase : testCases) {
       int n = (int) testCase[0];
-      long expected = testCase[1];
-      long actual = Factorials.computeRecursive(n);
+      BigInteger expected = BigInteger.valueOf(testCase[1]);
+      BigInteger actual = FactorialsBigInteger.computeRecursive(n);
       assertEquals(expected, actual);
     }
   }
@@ -30,7 +31,7 @@ class FactorialsTest {
     assertThrows(IllegalArgumentException.class, new Executable() {
       @Override
       public void execute() throws Throwable {
-        Factorials.computeRecursive(-1);
+        FactorialsBigInteger.computeRecursive(-1);
       }
     });
   }
